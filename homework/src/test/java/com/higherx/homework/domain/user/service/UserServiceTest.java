@@ -53,7 +53,7 @@ public class UserServiceTest {
     }
 
     @Test
-    @DisplayName("4 verify nickname")
+    @DisplayName("4 verify crn")
     public void verifyCrn() {
         Exception exception = Assertions.assertThrows(RuntimeExceptionWithCode.class, () -> userService.verifyCrnNumber(123,23,123456));
         Assertions.assertDoesNotThrow(() -> userService.verifyCrnNumber(123,23,1234));
