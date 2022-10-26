@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/test1?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+  jpa:
+    hibernate:
+      ddl-auto: update
+    #      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL57Dialect
+    show-sql: true
+  redis:
+    port: 6379
+    host: localhost
+token:
+  access-token-secret: awey34634561235GWSDGVdsgvdsfhyfasdzehgysurhrt232t6347yetseryesrytasrgdasdrgvbasdfgbaedsfrghaewrgaewrghaerghaerha34qw67yy45
+  access-token-expired: 1209600
+  refresh-token-expired: 30

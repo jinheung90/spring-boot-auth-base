@@ -40,6 +40,9 @@
 ## 유저 관련
 ```
    휴대폰 번호를 스트링으로 저장함 나중에 필요에 따라 이야기 해보고 결정해야함
-
-
 ```
+
+## api 테스트 (postman)
+| success | httpMethod | path  | description
+|:---|:---|:------|:---|
+O | post    | /user | 카카오 로그인
