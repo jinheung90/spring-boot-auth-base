@@ -63,7 +63,8 @@ public class Todo {
         }
     }
 
-    public void setContext(String context) {
+    public void updateTodo(String subject, String context) {
+        this.context = Objects.requireNonNullElse(subject, this.subject);
         this.context = Objects.requireNonNullElse(context, this.context);
 
     }

@@ -35,9 +35,9 @@ public class TodoService {
 
 
     @Transactional
-    public void updateTodo(String context, Long userId, Long id) {
+    public void updateTodo(String subject, String context, Long userId, Long id) {
         Todo todo = findTodoByUserIdAndId(userId, id);
-        todo.setContext(context);
+        todo.updateTodo(subject, context);
         todoRepository.save(todo);
     }
 

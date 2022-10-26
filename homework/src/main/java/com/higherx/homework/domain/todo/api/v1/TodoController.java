@@ -79,7 +79,7 @@ public class TodoController {
     ) {
         Long pk = CommonFunctions.getAuthUserPK();
         TodoDto todoDto = todoRequest.getTodo();
-        todoService.updateTodo(todoDto.getContext(), pk, id);
+        todoService.updateTodo(todoDto.getSubject(), todoDto.getContext(), pk, id);
         return ResponseEntity.ok(ResponseFormat.responseTrue(null));
     }
 
