@@ -41,12 +41,12 @@ public class TodoService {
         todoRepository.save(todo);
     }
 
-
+    @Transactional
     public void addTodo(String context, String subject, Long userId) {
         Todo todo = Todo.toEntity(userId, context, subject);
         todoRepository.save(todo);
     }
-
+    @Transactional
     public void disableTodo(Long userId, Long id) {
         Todo todo = findTodoByUserIdAndId(userId, id);
         todo.disableTodo();
