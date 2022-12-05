@@ -26,7 +26,7 @@ public class TodoService {
                 .orElseThrow(() -> new RuntimeExceptionWithCode(GlobalErrorCode.BAD_REQUEST));
     }
 
-    @Transactional
+
     public void updateTodoSuccess(Long userId, Long id) {
         Todo todo = findTodoByUserIdAndId(userId, id);
         todo.changeSuccessFlag();
